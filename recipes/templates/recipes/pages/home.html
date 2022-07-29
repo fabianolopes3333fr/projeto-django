@@ -1,42 +1,12 @@
-{% include "recipes/partials/head.html" %}
-
-<body>
-  {% include "recipes/partials/header.html" %}
-  {% include "recipes/partials/search.html" %}
+{% extends 'global/base.html' %}
 
 
-  <main class="main-content-container">
-    <div class="main-content main-list container">
-      <div class="recipe recipe-list-item">
-        <div class="recipe-cover">
-          <img src="https://dummyimage.com/640x360/fff/aaa" alt="">
-        </div>
-        <div class="recipe-title-container">
-          <h2 class="recipe-title">Lorem ipsum dolor sit amet.</h2>
-        </div>
-        <div class="recipe-author">
-          <span class="recipe-author-item">
-            <i class="bi bi-person-heart"></i>
-            Fabiano Lopes
-          </span>
-          <!--  -->
-          <span class="recipe-author-item">
-            <i class="bi bi-calendar-heart"></i>
-            16/10/2022 as 13:22
-          </span>
-          <!--  -->
-          <span class="recipe-author-item">
-            <a href=""></a>
-            <i class="bi bi-stack"></i>
-            <span>Cafe da manha </span>
-          </span>
-          <!--  -->
+{% block content %}
+<div class="main-content main-list container">
+  {% include 'recipes/partials/recipe.html' %}
+  {% include 'recipes/partials/recipe.html' %}
+  {% include 'recipes/partials/recipe.html' %}
+  {% include 'recipes/partials/recipe.html' %}
+</div>
 
-
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
-
-</html>
+{% endblock content %}
