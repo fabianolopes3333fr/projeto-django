@@ -114,6 +114,7 @@ h6 {
 
 .recipe-list-item {
   max-width: 64rem;
+  height: fit-content;
 }
 
 .recipe-list-item:hover {
@@ -123,6 +124,10 @@ h6 {
 
 .recipe-title-container {
   padding: 2rem;
+}
+
+.recipe-title-container a {
+  text-decoration: none;
 }
 
 .recipe-author {
@@ -191,6 +196,10 @@ h6 {
 .main-detail .recipe-list-item:hover {
   transform: scale(1.02);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.preparation-steps {
+  padding: 2rem;
 }
 
 .main-footer {
